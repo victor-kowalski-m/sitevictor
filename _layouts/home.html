@@ -1,10 +1,47 @@
----
-layout: default
----
-
-<ul>
-<header><img src="{{ '/assets/images/sample-logo.png' | relative_url }}"></header>
-{% for post in site.posts %}
-<li><a href="{{ post.url | relative_url }}"> {{ post.title }}</a></li >
-{% endfor %}
-</ul >
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="UTF -8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Home </title >
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<nav>
+    <h1>Conheça os países!</h1>
+    <ul>
+    {% for post in site.posts %}
+    <li><a href="{{ post.url | relative_url }}"> {{ post.title }}</a></li >
+    {% endfor %}
+    </ul >
+</nav>
+<br>
+<div class="conteiner">
+    <div class="um">
+        <header><h1>Motivação</h1></header>
+        <p>Neste site mostro um pouco dos países do mundo, espero que gostem e queiram visitá-los um dia.</p>
+        <p>O mundo é enorme, que tal conhecer alguns lugares bonitos?</p>
+        <img src="{{ '/assets/images/mundo.png' | relative_url }}" width="400" height="400">
+    </div>
+    <br>
+    <div class="dois"> 
+        <header><h1>E você?</h1></header>
+        Pra onde você gostaria de ir?</div>
+    <br>
+    <div class="tres">
+        <header><h1>Próximos passos</h1></header>
+        Próximos países a serem adicionados:
+        <br>
+        <br>
+        <ol>
+            <li> Zimbábue</li>
+            <li>Eslovênia</li>
+            <li>Mongólia</li>
+            <li>Cazaquistão</li>
+        </ol>
+        <br>
+        Caso tiver alguma sugestão, entre em contato: victor@paises.com
+    </div>
+</div> 
+    <br>
+    <footer>Por Victor Kowalski Martins :)</footer>
+    </html>

@@ -1,3 +1,47 @@
-body {
- color : green ;
+* {text-align: center;
+color: black;
+}
+
+nav, header, footer {background-color:#66ad85;}
+
+nav{padding:10px;
+height:100px}
+
+
+ a {
+     font-size: large;
+     text-decoration: none;
+     color: black
  }
+div .um, .dois, .tres, .quatro{
+    background-color: lightblue;
+    padding: 30px;
+    margin: auto;
+
+    }
+
+    ul, ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+      }
+    
+     ul li{display: inline;}
+.conteiner {
+    grid-template-areas: "bx1 bx2"
+                         "bx1 bx3";
+     }
+
+.um {
+         grid-area: bx1;
+     }
+
+     div .dois{
+         grid-area: bx2;
+     }
+
+     div .tres {
+         grid-area: bx3;
+     }
+    
